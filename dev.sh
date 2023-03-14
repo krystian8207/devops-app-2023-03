@@ -37,7 +37,7 @@ elif [ "$1" == "commit" ]; then
 
   docker commit rstudio krystian8207/rst:$2
   sed -i "4s/.*/export IMAGE_VERSION=$2/" ./dev.sh
-  #sed -i "5s/.*/  IMAGE_VERSION: $2/" ./.github/workflows/test.yaml
+  sed -i "5s/.*/  IMAGE_VERSION: $2/" ./.github/workflows/test.yaml
 
 elif [ "$1" == "run" ]; then
 
