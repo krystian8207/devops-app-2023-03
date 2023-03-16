@@ -1,7 +1,7 @@
 Package: webapp
 Type: Package
 Title: Display Sales Data
-Version: 0.0.0.9003
+Version: 0.0.1
 Author: Krystian Igras
 Maintainer: Krystian Igras <krystian8207@gmail.com>
 Description: App displaying sales data with filters.
