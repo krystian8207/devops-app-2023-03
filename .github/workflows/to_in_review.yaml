@@ -1,0 +1,14 @@
+on:
+  pull_request:
+    types: [opened, edited, ready_for_review, synchronize, review_requested]
+
+jobs:
+  move-linked-issues:
+    runs-on: ubuntu-latest
+    name: Move linked issues to In Review or In Progress column
+    steps:
+      - uses: rharter/github-move-linked-project-cards@v0.1.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          column: In Review
+          draft-column: In Progress
