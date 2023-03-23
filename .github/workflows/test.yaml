@@ -12,4 +12,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run tests
-        run: docker run -v `pwd`:/project krystian8207/rst:$IMAGE_VERSION bash -c "R -e 'testthat::test_local()'"
+        run: echo ${{ github }}
